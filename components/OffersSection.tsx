@@ -30,13 +30,13 @@ export default function OffersSection() {
 
   const handleBookOffer = (offer: OfferRecord) => {
     const message = [
-      `🔥 *Sky Way Travels Special Offer Inquiry*`,
+      `🔥 *Rozline Travels Special Offer Inquiry*`,
       `Offer: ${offer.title}`,
       `Route/Details: ${offer.route}`,
       `Special Price: ${offer.price}`,
       `Validity: ${offer.validity}`,
       `---------------------------------------`,
-      `Hi Sky Way Tirur team, please confirm seat/package availability for this offer.`
+      `Hi Rozline Tirur team, please confirm seat/package availability for this offer.`
     ].join("\n");
 
     window.open(`https://wa.me/918590624181?text=${encodeURIComponent(message)}`, "_blank");
@@ -63,7 +63,7 @@ export default function OffersSection() {
           {offers.map(offer => (
             <div
               key={offer.id}
-              className="group relative overflow-hidden rounded-3xl border border-zinc-200/90 bg-white/95 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
+              className="group relative overflow-hidden rounded-3xl border border-zinc-200/90 bg-white/95 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-sky-500 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
             >
               {/* Cover Image */}
               <div className="relative h-48 w-full overflow-hidden">
@@ -97,7 +97,7 @@ export default function OffersSection() {
                 <div className="mt-4 flex items-baseline justify-between border-t border-zinc-100 pt-3 dark:border-white/10">
                   <div>
                     <span className="text-[10px] uppercase font-bold text-zinc-400 block">Offer Fare</span>
-                    <span className="font-display text-xl font-black text-emerald-700 dark:text-emerald-400">
+                    <span className="font-display text-xl font-black text-sky-700 dark:text-sky-400">
                       {offer.price}
                     </span>
                   </div>
@@ -118,7 +118,7 @@ export default function OffersSection() {
                 <button
                   type="button"
                   onClick={() => handleBookOffer(offer)}
-                  className="mt-4 flex w-full items-center justify-center gap-1.5 rounded-2xl bg-emerald-600 py-2.5 text-xs font-black text-white shadow-md shadow-emerald-700/20 transition hover:bg-emerald-500 active:scale-95"
+                  className="mt-4 flex w-full items-center justify-center gap-1.5 rounded-2xl bg-sky-600 py-2.5 text-xs font-black text-white shadow-md shadow-sky-700/20 transition hover:bg-sky-500 active:scale-95"
                 >
                   <Send size={13} />
                   <span>Grab Deal on WhatsApp</span>

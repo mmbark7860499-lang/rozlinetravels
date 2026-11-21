@@ -166,7 +166,7 @@ export default function Hero3DCanvas() {
             ctx.lineTo(p.px, p.py);
           }
         }
-        ctx.strokeStyle = "rgba(16, 185, 129, 0.06)";
+        ctx.strokeStyle = "rgba(2, 132, 199, 0.12)";
         ctx.stroke();
       }
 
@@ -176,7 +176,7 @@ export default function Hero3DCanvas() {
         if (pr.z2 > -globeRadius) {
           ctx.beginPath();
           ctx.arc(pr.px, pr.py, p.size * pr.scale, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha * Math.max(0.2, pr.scale)})`;
+          ctx.fillStyle = `rgba(249, 115, 22, ${p.alpha * Math.max(0.2, pr.scale)})`;
           ctx.fill();
         }
       });
@@ -206,7 +206,7 @@ export default function Hero3DCanvas() {
           ctx.beginPath();
           ctx.moveTo(pOrigin.px, pOrigin.py);
           ctx.quadraticCurveTo(pMid.px, pMid.py, pDest.px, pDest.py);
-          ctx.strokeStyle = idx % 2 === 0 ? "rgba(16, 185, 129, 0.35)" : "rgba(212, 175, 55, 0.35)";
+          ctx.strokeStyle = idx % 2 === 0 ? "rgba(2, 132, 199, 0.45)" : "rgba(249, 115, 22, 0.45)";
           ctx.lineWidth = 1.5 * Math.max(0.6, pOrigin.scale);
           ctx.setLineDash([4, 6]);
           ctx.stroke();
@@ -225,8 +225,8 @@ export default function Hero3DCanvas() {
           // Glow beacon
           ctx.beginPath();
           ctx.arc(pPacket.px, pPacket.py, 3.5 * pPacket.scale, 0, Math.PI * 2);
-          ctx.fillStyle = idx % 2 === 0 ? "#10b981" : "#f59e0b";
-          ctx.shadowColor = idx % 2 === 0 ? "#10b981" : "#d4af37";
+          ctx.fillStyle = idx % 2 === 0 ? "#0284c7" : "#f97316";
+          ctx.shadowColor = idx % 2 === 0 ? "#0284c7" : "#f97316";
           ctx.shadowBlur = 10;
           ctx.fill();
           ctx.shadowBlur = 0;
@@ -237,7 +237,7 @@ export default function Hero3DCanvas() {
           ctx.beginPath();
           ctx.arc(pDest.px, pDest.py, 4 * pDest.scale, 0, Math.PI * 2);
           ctx.fillStyle = "#ffffff";
-          ctx.shadowColor = "#10b981";
+          ctx.shadowColor = "#0284c7";
           ctx.shadowBlur = 8;
           ctx.fill();
           ctx.shadowBlur = 0;

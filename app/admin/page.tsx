@@ -373,29 +373,29 @@ export default function AdminPage() {
     return (
       <div className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-50 via-emerald-50/30 to-slate-100 px-4 py-12">
         {/* Ambient Lights */}
-        <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl" />
+        <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-amber-500/10 blur-3xl" />
 
         <div className="relative w-full max-w-md">
           {/* Card */}
-          <div className="overflow-hidden rounded-[2.5rem] border border-zinc-200/90 bg-white/95 p-8 shadow-2xl shadow-emerald-950/10 backdrop-blur-2xl">
+          <div className="overflow-hidden rounded-[2.5rem] border border-zinc-200/90 bg-white/95 p-8 shadow-2xl shadow-sky-950/10 backdrop-blur-2xl">
             {/* Logo & Header */}
             <div className="text-center">
-              <div className="mx-auto relative h-16 w-16 overflow-hidden rounded-full ring-4 ring-emerald-500/20 shadow-md">
+              <div className="mx-auto relative h-16 w-16 overflow-hidden rounded-2xl bg-white p-1 ring-4 ring-sky-500/20 shadow-md">
                 <Image
-                  src="/sky-way-logo.jpg"
-                  alt="Sky Way Travels Tirur"
+                  src="/logo.png"
+                  alt="Rozline Travels Tirur"
                   fill
-                  className="object-cover"
+                  className="object-contain p-1"
                   priority
                 />
               </div>
-              <div className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-50 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-emerald-800">
+              <div className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-sky-500/20 bg-sky-50 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-sky-800">
                 <ShieldCheck size={13} />
                 <span>Executive Command Portal</span>
               </div>
               <h1 className="mt-2 font-display text-2xl font-black text-zinc-900">
-                Rozline & Sky Way Desk
+                Rozline Travel Desk
               </h1>
               <p className="mt-1 text-xs text-zinc-500">
                 Sign in with authorized agency credentials to manage live bookings, customer leads, and promotional deals.
@@ -423,7 +423,7 @@ export default function AdminPage() {
                     onChange={e => setEmailInput(e.target.value)}
                     required
                     placeholder="rozlinetravels@gmail.com"
-                    className="w-full rounded-2xl border border-zinc-200 bg-zinc-50/80 px-4 py-3 pl-10 text-xs font-medium text-zinc-900 outline-none transition focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-600/15"
+                    className="w-full rounded-2xl border border-zinc-200 bg-zinc-50/80 px-4 py-3 pl-10 text-xs font-medium text-zinc-900 outline-none transition focus:border-sky-600 focus:bg-white focus:ring-2 focus:ring-sky-600/15"
                   />
                   <Mail size={16} className="absolute left-3.5 top-3.5 text-zinc-400" />
                 </div>
@@ -440,7 +440,7 @@ export default function AdminPage() {
                     onChange={e => setPasswordInput(e.target.value)}
                     required
                     placeholder="Enter your password"
-                    className="w-full rounded-2xl border border-zinc-200 bg-zinc-50/80 px-4 py-3 pl-10 pr-10 text-xs font-medium text-zinc-900 outline-none transition focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-600/15"
+                    className="w-full rounded-2xl border border-zinc-200 bg-zinc-50/80 px-4 py-3 pl-10 pr-10 text-xs font-medium text-zinc-900 outline-none transition focus:border-sky-600 focus:bg-white focus:ring-2 focus:ring-sky-600/15"
                   />
                   <Lock size={16} className="absolute left-3.5 top-3.5 text-zinc-400" />
                   <button
@@ -456,7 +456,7 @@ export default function AdminPage() {
               <button
                 type="submit"
                 disabled={isSubmittingAuth}
-                className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-700 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-emerald-700/25 transition hover:brightness-110 active:scale-95 disabled:opacity-50"
+                className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-700 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-sky-700/25 transition hover:brightness-110 active:scale-95 disabled:opacity-50"
               >
                 {isSubmittingAuth ? (
                   <>
@@ -476,7 +476,7 @@ export default function AdminPage() {
             <div className="mt-6 text-center">
               <Link
                 href="/"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-zinc-500 hover:text-emerald-700 transition"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-zinc-500 hover:text-sky-700 transition"
               >
                 <ArrowLeft size={13} />
                 <span>Return to Public Website</span>
@@ -497,18 +497,18 @@ export default function AdminPage() {
       <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6">
           <div className="flex items-center gap-3">
-            <Link href="/" className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-emerald-500/30">
-              <Image src="/sky-way-logo.jpg" alt="Sky Way" fill className="object-cover" />
+            <Link href="/" className="relative h-10 w-10 overflow-hidden rounded-xl bg-white p-0.5 shadow ring-2 ring-sky-500/30">
+              <Image src="/logo.png" alt="Rozline" fill className="object-contain p-0.5" />
             </Link>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="font-display text-base font-extrabold text-zinc-900">Rozline & Sky Way Desk</h1>
-                <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-black text-emerald-800 border border-emerald-600/20">
+                <h1 className="font-display text-base font-extrabold text-zinc-900">Rozline Travel Desk</h1>
+                <span className="rounded-full bg-sky-50 px-2.5 py-0.5 text-[10px] font-black text-sky-800 border border-sky-600/20">
                   Executive Desk
                 </span>
               </div>
               <p className="text-[11px] font-semibold text-zinc-500">
-                Logged in as <span className="font-bold text-emerald-800">{adminUser?.email || "rozlinetravels@gmail.com"}</span> (Super Admin)
+                Logged in as <span className="font-bold text-sky-800">{adminUser?.email || "rozlinetravels@gmail.com"}</span> (Super Admin)
               </p>
             </div>
           </div>
@@ -517,7 +517,7 @@ export default function AdminPage() {
             <button
               onClick={loadAllData}
               title="Refresh Data"
-              className="grid h-9 w-9 place-items-center rounded-xl border border-zinc-200 bg-white text-zinc-600 hover:bg-zinc-50 hover:text-emerald-700 transition"
+              className="grid h-9 w-9 place-items-center rounded-xl border border-zinc-200 bg-white text-zinc-600 hover:bg-zinc-50 hover:text-sky-700 transition"
             >
               <RefreshCw size={15} className={isLoading ? "animate-spin" : ""} />
             </button>
@@ -556,7 +556,7 @@ export default function AdminPage() {
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`flex shrink-0 items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-black transition ${
                   active
-                    ? "bg-emerald-600 text-white shadow-sm"
+                    ? "bg-sky-600 text-white shadow-sm"
                     : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
                 }`}
               >
@@ -575,12 +575,12 @@ export default function AdminPage() {
           <div className="rounded-3xl border border-zinc-200/90 bg-white p-5 shadow-sm">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase text-zinc-500">Total Bookings</span>
-              <div className="grid h-9 w-9 place-items-center rounded-2xl bg-emerald-50 text-emerald-700">
+              <div className="grid h-9 w-9 place-items-center rounded-2xl bg-sky-50 text-sky-700">
                 <Plane size={18} />
               </div>
             </div>
             <p className="mt-3 font-display text-3xl font-extrabold text-zinc-900">{stats.total}</p>
-            <p className="text-[11px] font-semibold text-emerald-700 mt-1">All Active Records</p>
+            <p className="text-[11px] font-semibold text-sky-700 mt-1">All Active Records</p>
           </div>
 
           <div className="rounded-3xl border border-zinc-200/90 bg-white p-5 shadow-sm">
@@ -635,7 +635,7 @@ export default function AdminPage() {
                     value={searchQuery}
                     onChange={e => setSearchQuery(e.target.value)}
                     placeholder="Search PNR, name, phone, destination..."
-                    className="w-full rounded-2xl border border-zinc-200 bg-white py-2 pl-9 pr-4 text-xs font-semibold text-zinc-900 outline-none focus:border-emerald-600"
+                    className="w-full rounded-2xl border border-zinc-200 bg-white py-2 pl-9 pr-4 text-xs font-semibold text-zinc-900 outline-none focus:border-sky-600"
                   />
                 </div>
 
@@ -679,7 +679,7 @@ export default function AdminPage() {
 
                 <button
                   onClick={() => setShowAddModal(true)}
-                  className="flex items-center gap-1.5 rounded-2xl bg-emerald-600 px-4 py-2 text-xs font-black text-white shadow-md shadow-emerald-700/20 hover:bg-emerald-500 transition"
+                  className="flex items-center gap-1.5 rounded-2xl bg-sky-600 px-4 py-2 text-xs font-black text-white shadow-md shadow-sky-700/20 hover:bg-sky-500 transition"
                 >
                   <Plus size={15} />
                   <span>New Walk-in Booking</span>
@@ -713,7 +713,7 @@ export default function AdminPage() {
                     ) : (
                       filteredBookings.map(b => (
                         <tr key={b.id} className="transition hover:bg-zinc-50/60">
-                          <td className="px-5 py-4 font-mono font-bold text-emerald-800">
+                          <td className="px-5 py-4 font-mono font-bold text-sky-800">
                             {b.booking_ref}
                           </td>
                           <td className="px-5 py-4">
@@ -731,7 +731,7 @@ export default function AdminPage() {
                           <td className="px-5 py-4 text-zinc-600">
                             {b.travel_date || "Open / Unset"}
                           </td>
-                          <td className="px-5 py-4 font-black text-emerald-700">
+                          <td className="px-5 py-4 font-black text-sky-700">
                             ₹{Number(b.estimated_amount || 0).toLocaleString("en-IN")}
                           </td>
                           <td className="px-5 py-4">
@@ -740,7 +740,7 @@ export default function AdminPage() {
                               onChange={e => handleStatusChange(b.id, e.target.value as any)}
                               className={`rounded-xl px-2.5 py-1 text-[11px] font-black outline-none ${
                                 b.status === "confirmed" || b.status === "ticket_issued"
-                                  ? "bg-emerald-50 text-emerald-800 border border-emerald-300"
+                                  ? "bg-sky-50 text-sky-800 border border-sky-300"
                                   : b.status === "pending"
                                   ? "bg-amber-50 text-amber-800 border border-amber-300"
                                   : "bg-zinc-100 text-zinc-700 border border-zinc-200"
@@ -760,7 +760,7 @@ export default function AdminPage() {
                               onChange={e => handlePaymentChange(b.id, e.target.value as any)}
                               className={`rounded-xl px-2.5 py-1 text-[11px] font-black outline-none ${
                                 b.payment_status === "fully_paid"
-                                  ? "bg-emerald-50 text-emerald-800 border border-emerald-300"
+                                  ? "bg-sky-50 text-sky-800 border border-sky-300"
                                   : b.payment_status === "deposit_paid"
                                   ? "bg-blue-50 text-blue-800 border border-blue-300"
                                   : "bg-red-50 text-red-700 border border-red-200"
@@ -778,11 +778,11 @@ export default function AdminPage() {
                                 onClick={() =>
                                   openWhatsApp(
                                     b.customer_phone,
-                                    `Hello ${b.customer_name}, regarding your Sky Way Travels booking (${b.booking_ref}) to ${b.destination}. Status: ${b.status.toUpperCase()}. How can we assist you today?`
+                                    `Hello ${b.customer_name}, regarding your Rozline Travels booking (${b.booking_ref}) to ${b.destination}. Status: ${b.status.toUpperCase()}. How can we assist you today?`
                                   )
                                 }
                                 title="Contact via WhatsApp"
-                                className="grid h-8 w-8 place-items-center rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white transition"
+                                className="grid h-8 w-8 place-items-center rounded-xl bg-sky-50 text-sky-700 hover:bg-sky-600 hover:text-white transition"
                               >
                                 <Send size={13} />
                               </button>
@@ -833,20 +833,20 @@ export default function AdminPage() {
                 <div
                   key={lead.id}
                   className={`rounded-3xl border p-5 shadow-sm transition bg-white ${
-                    lead.is_contacted ? "border-zinc-200 opacity-80" : "border-emerald-500/50 ring-1 ring-emerald-500/20"
+                    lead.is_contacted ? "border-zinc-200 opacity-80" : "border-sky-500/50 ring-1 ring-sky-500/20"
                   }`}
                 >
                   <div className="flex items-start justify-between">
                     <div>
                       <span className="font-bold text-zinc-900 text-base">{lead.lead_name}</span>
-                      <span className="block text-xs font-semibold text-emerald-800">{lead.lead_phone}</span>
+                      <span className="block text-xs font-semibold text-sky-800">{lead.lead_phone}</span>
                     </div>
                     <button
                       onClick={() => handleToggleLeadContacted(lead.id, lead.is_contacted)}
                       className={`rounded-full px-2.5 py-0.5 text-[10px] font-black ${
                         lead.is_contacted
                           ? "bg-zinc-100 text-zinc-600"
-                          : "bg-emerald-50 text-emerald-800 border border-emerald-300"
+                          : "bg-sky-50 text-sky-800 border border-sky-300"
                       }`}
                     >
                       {lead.is_contacted ? "Contacted" : "Action Needed"}
@@ -872,10 +872,10 @@ export default function AdminPage() {
                       onClick={() =>
                         openWhatsApp(
                           lead.lead_phone,
-                          `Hi ${lead.lead_name}, greetings from Sky Way Travels Tirur! We received your request regarding ${lead.service_needed || "travel services"}. How may we assist you with fares and itinerary?`
+                          `Hi ${lead.lead_name}, greetings from Rozline Travels Tirur! We received your request regarding ${lead.service_needed || "travel services"}. How may we assist you with fares and itinerary?`
                         )
                       }
-                      className="inline-flex items-center gap-1 rounded-xl bg-emerald-600 px-3 py-1.5 text-xs font-black text-white hover:bg-emerald-500 transition"
+                      className="inline-flex items-center gap-1 rounded-xl bg-sky-600 px-3 py-1.5 text-xs font-black text-white hover:bg-sky-500 transition"
                     >
                       <Send size={12} />
                       <span>Reply on WhatsApp</span>
@@ -901,7 +901,7 @@ export default function AdminPage() {
               </div>
               <button
                 onClick={() => setShowAddOfferModal(true)}
-                className="flex items-center gap-1.5 rounded-2xl bg-emerald-600 px-4 py-2 text-xs font-black text-white shadow-md shadow-emerald-700/20 hover:bg-emerald-500 transition"
+                className="flex items-center gap-1.5 rounded-2xl bg-sky-600 px-4 py-2 text-xs font-black text-white shadow-md shadow-sky-700/20 hover:bg-sky-500 transition"
               >
                 <Plus size={15} />
                 <span>Add New Travel Deal</span>
@@ -932,7 +932,7 @@ export default function AdminPage() {
                     <h3 className="font-bold text-sm text-zinc-900 line-clamp-1">{offer.title}</h3>
                     <p className="text-xs text-zinc-500 line-clamp-1 mt-0.5">{offer.route}</p>
                     <div className="mt-3 flex items-baseline justify-between border-t border-zinc-100 pt-2">
-                      <span className="font-display text-lg font-black text-emerald-700">{offer.price}</span>
+                      <span className="font-display text-lg font-black text-sky-700">{offer.price}</span>
                       {offer.original_price && (
                         <span className="text-xs text-zinc-400 line-through">{offer.original_price}</span>
                       )}
@@ -943,7 +943,7 @@ export default function AdminPage() {
                         onClick={() => handleToggleOffer(offer.id, offer.is_active)}
                         className={`rounded-full px-3 py-1 text-[11px] font-black ${
                           offer.is_active
-                            ? "bg-emerald-50 text-emerald-800 border border-emerald-300"
+                            ? "bg-sky-50 text-sky-800 border border-sky-300"
                             : "bg-zinc-100 text-zinc-600"
                         }`}
                       >
@@ -980,8 +980,8 @@ export default function AdminPage() {
             </button>
 
             <div className="flex items-center gap-2">
-              <span className="font-mono text-sm font-black text-emerald-700">{selectedBooking.booking_ref}</span>
-              <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-black uppercase text-emerald-800">
+              <span className="font-mono text-sm font-black text-sky-700">{selectedBooking.booking_ref}</span>
+              <span className="rounded-full bg-sky-50 px-2.5 py-0.5 text-[10px] font-black uppercase text-sky-800">
                 {selectedBooking.service_type}
               </span>
             </div>
@@ -1016,7 +1016,7 @@ export default function AdminPage() {
               )}
               <div className="flex justify-between border-t border-zinc-200 pt-2">
                 <span className="font-bold text-zinc-500">Estimated Price:</span>
-                <span className="font-black text-emerald-700 text-sm">₹{Number(selectedBooking.estimated_amount || 0).toLocaleString("en-IN")}</span>
+                <span className="font-black text-sky-700 text-sm">₹{Number(selectedBooking.estimated_amount || 0).toLocaleString("en-IN")}</span>
               </div>
             </div>
 
@@ -1032,10 +1032,10 @@ export default function AdminPage() {
                 onClick={() =>
                   openWhatsApp(
                     selectedBooking.customer_phone,
-                    `Hello ${selectedBooking.customer_name}, regarding your booking ${selectedBooking.booking_ref} with Sky Way Travels Tirur.`
+                    `Hello ${selectedBooking.customer_name}, regarding your booking ${selectedBooking.booking_ref} with Rozline Travels Tirur.`
                   )
                 }
-                className="flex-1 flex items-center justify-center gap-1.5 rounded-2xl bg-emerald-600 py-3 text-xs font-black text-white hover:bg-emerald-500 transition"
+                className="flex-1 flex items-center justify-center gap-1.5 rounded-2xl bg-sky-600 py-3 text-xs font-black text-white hover:bg-sky-500 transition"
               >
                 <Send size={14} />
                 <span>Message on WhatsApp</span>
@@ -1065,11 +1065,11 @@ export default function AdminPage() {
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="font-bold uppercase text-zinc-600">Customer Name</label>
-                  <input name="name" required placeholder="Passenger name" className="mt-1 w-full rounded-xl border border-zinc-200 p-2.5 outline-none focus:border-emerald-600" />
+                  <input name="name" required placeholder="Passenger name" className="mt-1 w-full rounded-xl border border-zinc-200 p-2.5 outline-none focus:border-sky-600" />
                 </div>
                 <div>
                   <label className="font-bold uppercase text-zinc-600">Phone</label>
-                  <input name="phone" required placeholder="+91 9876543210" className="mt-1 w-full rounded-xl border border-zinc-200 p-2.5 outline-none focus:border-emerald-600" />
+                  <input name="phone" required placeholder="+91 9876543210" className="mt-1 w-full rounded-xl border border-zinc-200 p-2.5 outline-none focus:border-sky-600" />
                 </div>
               </div>
 
@@ -1086,7 +1086,7 @@ export default function AdminPage() {
                 </div>
                 <div>
                   <label className="font-bold uppercase text-zinc-600">Destination</label>
-                  <input name="destination" required placeholder="e.g. Dubai, Jeddah" className="mt-1 w-full rounded-xl border border-zinc-200 p-2.5 outline-none focus:border-emerald-600" />
+                  <input name="destination" required placeholder="e.g. Dubai, Jeddah" className="mt-1 w-full rounded-xl border border-zinc-200 p-2.5 outline-none focus:border-sky-600" />
                 </div>
               </div>
 
@@ -1112,7 +1112,7 @@ export default function AdminPage() {
 
               <button
                 type="submit"
-                className="mt-4 w-full rounded-2xl bg-emerald-600 py-3 text-xs font-black uppercase text-white hover:bg-emerald-500 transition"
+                className="mt-4 w-full rounded-2xl bg-sky-600 py-3 text-xs font-black uppercase text-white hover:bg-sky-500 transition"
               >
                 Save Booking to Database
               </button>
@@ -1186,7 +1186,7 @@ export default function AdminPage() {
 
               <button
                 type="submit"
-                className="mt-4 w-full rounded-2xl bg-emerald-600 py-3 text-xs font-black uppercase text-white hover:bg-emerald-500 transition"
+                className="mt-4 w-full rounded-2xl bg-sky-600 py-3 text-xs font-black uppercase text-white hover:bg-sky-500 transition"
               >
                 Publish Deal to Website
               </button>

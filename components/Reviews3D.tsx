@@ -7,7 +7,7 @@ const reviewsList = [
   {
     name: "Afsal Rahman",
     location: "Tirur / Dubai Expat",
-    text: "Sky Way Travels made our family visa and Emirates ticket booking effortless. We got our Dubai visa approval in less than 24 hours and direct seats from Calicut with complete web check-in handled for us.",
+    text: "Rozline Travels made our family visa and Emirates ticket booking effortless. We got our Dubai visa approval in less than 24 hours and direct seats from Calicut with complete web check-in handled for us.",
     rating: 5,
     tag: "Verified UAE Travel",
     avatar: "https://i.pravatar.cc/160?img=12"
@@ -15,7 +15,7 @@ const reviewsList = [
   {
     name: "Shahana Parveen",
     location: "Malappuram",
-    text: "Booked our 15-day Umrah package with Sky Way. The hotel in Makkah was genuinely 50 meters from Haram just as promised. Authentic Kerala meals and cooperative guides made the pilgrimage deeply peaceful.",
+    text: "Booked our 15-day Umrah package with Rozline. The hotel in Makkah was genuinely 50 meters from Haram just as promised. Authentic Kerala meals and cooperative guides made the pilgrimage deeply peaceful.",
     rating: 5,
     tag: "VIP Umrah Package",
     avatar: "https://i.pravatar.cc/160?img=47"
@@ -23,7 +23,7 @@ const reviewsList = [
   {
     name: "Nithin Kumar",
     location: "Calicut",
-    text: "Fastest response on WhatsApp! Whenever I need last-minute ticket changes or extra luggage tickets on Gulf routes, Sky Way Tirur sorts it out within minutes. Transparent pricing with zero surprise charges.",
+    text: "Fastest response on WhatsApp! Whenever I need last-minute ticket changes or extra luggage tickets on Gulf routes, Rozline Tirur sorts it out within minutes. Transparent pricing with zero surprise charges.",
     rating: 5,
     tag: "Flight & Insurance",
     avatar: "https://i.pravatar.cc/160?img=68"
@@ -32,7 +32,7 @@ const reviewsList = [
 
 export default function Reviews3D() {
   return (
-    <section className="relative px-4 py-24 bg-gradient-to-b from-transparent via-emerald-950/15 to-transparent">
+    <section className="relative px-4 py-24 bg-gradient-to-b from-transparent via-sky-950/15 to-transparent">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -68,7 +68,7 @@ export default function Reviews3D() {
                       <Star key={i} size={15} fill="currentColor" />
                     ))}
                   </div>
-                  <span className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-[10px] font-black text-emerald-700 dark:text-emerald-400">
+                  <span className="rounded-full bg-sky-500/15 px-2.5 py-0.5 text-[10px] font-black text-sky-700 dark:text-sky-400">
                     {review.tag}
                   </span>
                 </div>
@@ -79,7 +79,7 @@ export default function Reviews3D() {
               </div>
 
               <div className="mt-6 flex items-center gap-3.5 border-t border-zinc-100 pt-4 dark:border-white/10">
-                <div className="relative h-11 w-11 overflow-hidden rounded-full ring-2 ring-emerald-500/30">
+                <div className="relative h-11 w-11 overflow-hidden rounded-full ring-2 ring-sky-500/30">
                   <Image
                     src={review.avatar}
                     alt={review.name}
@@ -92,7 +92,7 @@ export default function Reviews3D() {
                 <div>
                   <h4 className="font-display font-bold text-sm text-zinc-900 dark:text-white flex items-center gap-1.5">
                     {review.name}
-                    <BadgeCheck size={14} className="text-emerald-500" />
+                    <BadgeCheck size={14} className="text-sky-500" />
                   </h4>
                   <p className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">{review.location}</p>
                 </div>

@@ -1,6 +1,6 @@
-# Rozline & Sky Way Travels
+# Rozline Travel and Tours
 
-Modern web portal and booking platform for **Rozline & Sky Way Travels**, Tirur, Kerala. Built with Next.js 15 (App Router), React 19, Tailwind CSS, and Supabase.
+Modern web portal and booking platform for **Rozline Travel and Tours**, Tirur, Kerala. Built with Next.js 15 (App Router), React 19, Tailwind CSS, and Supabase.
 
 ---
 
@@ -118,4 +118,4 @@ npm run start
 
 ## 📄 License
 
-Private & Proprietary — Rozline & Sky Way Travels Tirur.
+Private & Proprietary — Rozline Travel and Tours Tirur.

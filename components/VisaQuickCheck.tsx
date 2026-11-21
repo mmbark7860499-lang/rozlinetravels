@@ -137,7 +137,7 @@ export default function VisaQuickCheck() {
     );
 
     const message = [
-      `🛂 *Sky Way Travels Visa Document Verification*`,
+      `🛂 *Rozline Travels Visa Document Verification*`,
       `Country: ${country.name}`,
       `Readiness Progress: ${progressPercent}% (${completedDocs}/${totalDocs} documents ready)`,
       `\nDocument Status:`,
@@ -153,7 +153,7 @@ export default function VisaQuickCheck() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.25em] text-emerald-600 dark:text-emerald-400">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.25em] text-sky-600 dark:text-sky-400">
             <ShieldCheck size={14} /> Interactive Visa Desk
           </span>
           <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-5xl text-zinc-900 dark:text-white">
@@ -179,7 +179,7 @@ export default function VisaQuickCheck() {
                   onClick={() => setSelectedIdx(i)}
                   className={`flex w-full items-center justify-between rounded-2xl p-3.5 text-left transition-all ${
                     selectedIdx === i
-                      ? "border border-emerald-500 bg-emerald-600 text-white shadow-lg shadow-emerald-700/20 font-black"
+                      ? "border border-sky-500 bg-sky-600 text-white shadow-lg shadow-sky-700/20 font-black"
                       : "border border-zinc-200 bg-white/60 text-zinc-700 hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 font-bold"
                   }`}
                 >
@@ -200,7 +200,7 @@ export default function VisaQuickCheck() {
 
             <Link
               href="/visa-services"
-              className="mt-6 flex items-center justify-center gap-2 rounded-2xl border border-zinc-200 p-3 text-xs font-bold text-emerald-700 transition hover:bg-emerald-50 dark:border-white/10 dark:text-emerald-400 dark:hover:bg-white/5"
+              className="mt-6 flex items-center justify-center gap-2 rounded-2xl border border-zinc-200 p-3 text-xs font-bold text-sky-700 transition hover:bg-sky-50 dark:border-white/10 dark:text-sky-400 dark:hover:bg-white/5"
             >
               <span>Explore full 17 country requirements</span>
               <ChevronRight size={14} />
@@ -220,7 +220,7 @@ export default function VisaQuickCheck() {
                   </p>
                 </div>
                 <div className="text-right">
-                  <span className="font-display text-2xl font-black text-emerald-600 dark:text-emerald-400">
+                  <span className="font-display text-2xl font-black text-sky-600 dark:text-sky-400">
                     {progressPercent}%
                   </span>
                   <span className="block text-[10px] uppercase font-bold text-zinc-400">Readiness</span>
@@ -230,7 +230,7 @@ export default function VisaQuickCheck() {
               {/* Progress Bar */}
               <div className="my-4 h-2 w-full overflow-hidden rounded-full bg-zinc-200 dark:bg-white/10">
                 <div
-                  className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-300"
+                  className="h-full bg-gradient-to-r from-sky-500 to-blue-500 transition-all duration-300"
                   style={{ width: `${progressPercent}%` }}
                 />
               </div>
@@ -245,7 +245,7 @@ export default function VisaQuickCheck() {
                       onClick={() => toggleCheck(doc)}
                       className={`flex cursor-pointer items-start gap-3 rounded-xl p-3 border transition-all ${
                         isChecked
-                          ? "border-emerald-500 bg-emerald-50/60 dark:bg-emerald-950/30"
+                          ? "border-sky-500 bg-sky-50/60 dark:bg-sky-950/30"
                           : "border-zinc-200 bg-white dark:border-white/5 dark:bg-white/5"
                       }`}
                     >
@@ -253,9 +253,9 @@ export default function VisaQuickCheck() {
                         type="checkbox"
                         checked={isChecked}
                         onChange={() => {}}
-                        className="mt-0.5 h-4 w-4 rounded text-emerald-600 focus:ring-emerald-500"
+                        className="mt-0.5 h-4 w-4 rounded text-sky-600 focus:ring-sky-500"
                       />
-                      <span className={`text-xs font-semibold leading-relaxed ${isChecked ? "text-emerald-950 dark:text-emerald-200 font-bold" : "text-zinc-700 dark:text-zinc-300"}`}>
+                      <span className={`text-xs font-semibold leading-relaxed ${isChecked ? "text-sky-950 dark:text-sky-200 font-bold" : "text-zinc-700 dark:text-zinc-300"}`}>
                         {doc}
                       </span>
                     </label>
@@ -269,7 +269,7 @@ export default function VisaQuickCheck() {
               <button
                 type="button"
                 onClick={handleWhatsAppVerification}
-                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-emerald-700/25 transition hover:scale-[1.01]"
+                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-sky-700/25 transition hover:scale-[1.01]"
               >
                 <Send size={15} />
                 <span>Submit Checklist to WhatsApp for Quick Verification</span>

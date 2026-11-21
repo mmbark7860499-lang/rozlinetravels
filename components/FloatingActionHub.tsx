@@ -28,7 +28,7 @@ export default function FloatingActionHub() {
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="grid h-10 w-10 place-items-center rounded-full border border-white/20 bg-black/70 text-white shadow-xl backdrop-blur-md transition-all hover:bg-emerald-600 hover:scale-110 active:scale-95"
+          className="grid h-10 w-10 place-items-center rounded-full border border-white/20 bg-black/70 text-white shadow-xl backdrop-blur-md transition-all hover:bg-sky-600 hover:scale-110 active:scale-95"
         >
           <ArrowUp size={16} />
         </button>
@@ -38,7 +38,7 @@ export default function FloatingActionHub() {
       <a
         href={`tel:${phonePrimary.replace(/\s+/g, "")}`}
         aria-label="Direct Phone Call"
-        className="grid sm:hidden h-12 w-12 place-items-center rounded-full border border-emerald-400/40 bg-emerald-800 text-white shadow-xl backdrop-blur-md transition-all hover:scale-105 active:scale-95"
+        className="grid sm:hidden h-12 w-12 place-items-center rounded-full border border-sky-400/40 bg-sky-800 text-white shadow-xl backdrop-blur-md transition-all hover:scale-105 active:scale-95"
       >
         <Phone size={19} />
       </a>
@@ -46,11 +46,11 @@ export default function FloatingActionHub() {
       {/* WhatsApp Concierge Button */}
       <a
         href={`https://wa.me/${waNumber}?text=${encodeURIComponent(
-          "Hello Sky Way Travels Tirur! I need assistance with travel planning."
+          "Hello Rozline Travels Tirur! I need assistance with travel planning."
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with Sky Way Travels on WhatsApp"
+        aria-label="Chat with Rozline Travels on WhatsApp"
         className="group relative flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#25D366] via-emerald-500 to-[#128C7E] p-3 sm:px-5 sm:py-3.5 text-white shadow-2xl shadow-emerald-500/40 transition-all hover:scale-105 hover:shadow-emerald-500/60 active:scale-95 ring-2 ring-white/30"
       >
         {/* Radar Pulse Effect */}

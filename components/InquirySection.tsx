@@ -53,7 +53,7 @@ export default function InquirySection() {
     }
 
     const message = [
-      `🌟 *Sky Way Travels Tirur Travel Inquiry*`,
+      `🌟 *Rozline Travels Tirur Travel Inquiry*`,
       `Name: ${name}`,
       `Phone: ${phone}`,
       `Destination: ${destination}`,
@@ -61,7 +61,7 @@ export default function InquirySection() {
       `Service: ${service}`,
       `Additional Notes: ${notes}`,
       `---------------------------------------`,
-      `Inquiry generated via Sky Way 3D Travel Desk`
+      `Inquiry generated via Rozline 3D Travel Desk`
     ].join("\n");
 
     window.open(`https://wa.me/918590624181?text=${encodeURIComponent(message)}`, "_blank");
@@ -71,10 +71,10 @@ export default function InquirySection() {
   return (
     <section id="contact" className="relative px-4 py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="relative overflow-hidden rounded-[3rem] border border-zinc-200/80 bg-gradient-to-br from-emerald-950 via-[#072412] to-slate-950 p-6 text-white shadow-2xl dark:border-white/10 sm:p-10 lg:p-14">
+        <div className="relative overflow-hidden rounded-[3rem] border border-zinc-200/80 bg-gradient-to-br from-[#061833] via-[#092244] to-[#040e1e] p-6 text-white shadow-2xl dark:border-white/10 sm:p-10 lg:p-14">
           
           {/* Ambient Glows */}
-          <div className="pointer-events-none absolute -left-20 -top-20 h-96 w-96 rounded-full bg-emerald-500/20 blur-3xl" />
+          <div className="pointer-events-none absolute -left-20 -top-20 h-96 w-96 rounded-full bg-sky-500/20 blur-3xl" />
           <div className="pointer-events-none absolute -right-20 -bottom-20 h-96 w-96 rounded-full bg-amber-500/15 blur-3xl" />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -102,7 +102,7 @@ export default function InquirySection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-white/10 text-emerald-400">
+                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-white/10 text-sky-400">
                     <Phone size={18} />
                   </div>
                   <div>
@@ -125,7 +125,7 @@ export default function InquirySection() {
               {/* Location Map Preview */}
               <div className="mt-8 overflow-hidden rounded-2xl border border-white/15 shadow-lg">
                 <iframe
-                  title="Sky Way Travels Tirur Location"
+                  title="Rozline Travels Tirur Location"
                   className="h-48 w-full border-0"
                   src="https://www.google.com/maps?q=Opposite%20Townhall%2C%20Tirur%2C%20Malappuram%2C%20Kerala%2C%20India&output=embed"
                   loading="lazy"
@@ -217,10 +217,10 @@ export default function InquirySection() {
 
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-teal-500 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-emerald-700/30 transition hover:brightness-110 active:scale-[0.99]"
+                  className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-sky-700/30 transition hover:brightness-110 active:scale-[0.99]"
                 >
                   <Send size={15} />
-                  <span>Send Inquiry to Sky Way WhatsApp</span>
+                  <span>Send Inquiry to Rozline WhatsApp</span>
                 </button>
               </form>
             </div>

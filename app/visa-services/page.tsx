@@ -60,7 +60,7 @@ export default function VisaRequirementsPage() {
   const readinessPercent = Math.round((readyDocuments / (totalDocuments || 1)) * 100);
 
   const applyMessage = [
-    `🛂 *Sky Way Travels Visa Inquiry: ${selected.name}*`,
+    `🛂 *Rozline Travels Visa Inquiry: ${selected.name}*`,
     `Readiness: ${readinessPercent}% (${readyDocuments}/${totalDocuments} documents ready)`,
     `Documents Status:`,
     ...selected.documents.map(
@@ -76,7 +76,7 @@ export default function VisaRequirementsPage() {
 
       {/* Hero Header */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#021808] via-[#042810] to-[#021408] px-4 pt-32 pb-24 text-white">
-        <div className="pointer-events-none absolute -top-40 left-1/3 h-96 w-96 rounded-full bg-emerald-500/20 blur-[130px]" />
+        <div className="pointer-events-none absolute -top-40 left-1/3 h-96 w-96 rounded-full bg-sky-500/20 blur-[130px]" />
         
         <div className="relative mx-auto max-w-7xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.25em] text-amber-300 backdrop-blur-md">
@@ -88,7 +88,7 @@ export default function VisaRequirementsPage() {
           </h1>
 
           <p className="mt-4 max-w-2xl text-base sm:text-lg text-zinc-300">
-            Accredited embassy document checklists, processing timelines, visa categories and arrival guidelines compiled by Sky Way Travels Tirur.
+            Accredited embassy document checklists, processing timelines, visa categories and arrival guidelines compiled by Rozline Travels Tirur.
           </p>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function VisaRequirementsPage() {
                 value={query}
                 onChange={e => setQuery(e.target.value)}
                 placeholder="Search country..."
-                className="w-full rounded-2xl border border-zinc-200 bg-zinc-50 py-3 pl-10 pr-4 text-xs font-bold text-zinc-900 outline-none transition focus:border-emerald-500 dark:border-white/10 dark:bg-black/30 dark:text-white"
+                className="w-full rounded-2xl border border-zinc-200 bg-zinc-50 py-3 pl-10 pr-4 text-xs font-bold text-zinc-900 outline-none transition focus:border-sky-500 dark:border-white/10 dark:bg-black/30 dark:text-white"
               />
             </div>
           </div>
@@ -128,8 +128,8 @@ export default function VisaRequirementsPage() {
                   onClick={() => selectCountry(country.slug)}
                   className={`flex flex-col items-center justify-center rounded-2xl p-3 text-center transition-all ${
                     isSelected
-                      ? "border border-emerald-500 bg-emerald-600 text-white shadow-lg shadow-emerald-700/20 font-black scale-105"
-                      : "border border-zinc-200 bg-white/70 text-zinc-700 hover:border-emerald-400 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 font-bold"
+                      ? "border border-sky-500 bg-sky-600 text-white shadow-lg shadow-sky-700/20 font-black scale-105"
+                      : "border border-zinc-200 bg-white/70 text-zinc-700 hover:border-sky-400 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 font-bold"
                   }`}
                 >
                   <span className="text-xs sm:text-sm">{country.name}</span>
@@ -152,7 +152,7 @@ export default function VisaRequirementsPage() {
           {/* Main Visual & Intro */}
           <div className="grid grid-cols-1 gap-8 rounded-[2.5rem] border border-zinc-200/80 bg-white/70 p-6 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5 sm:p-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1 text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-xs font-black uppercase tracking-wider text-sky-600 dark:text-sky-400">
                 <Globe2 size={13} /> {selected.name} Visa Guide
               </span>
               <h2 className="mt-4 font-display text-3xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white">
@@ -185,7 +185,7 @@ export default function VisaRequirementsPage() {
                   href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(applyMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 px-6 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-emerald-700/25 transition hover:scale-105"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 px-6 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-sky-700/25 transition hover:scale-105"
                 >
                   <Send size={15} />
                   <span>Submit {selected.name} Checklist to WhatsApp</span>
@@ -206,7 +206,7 @@ export default function VisaRequirementsPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-white">
-                <p className="text-[11px] font-black uppercase tracking-widest text-amber-400">Sky Way Verified Guide</p>
+                <p className="text-[11px] font-black uppercase tracking-widest text-amber-400">Rozline Verified Guide</p>
                 <p className="font-display text-2xl font-bold mt-1">Travel Prepared. Travel Confidently.</p>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function VisaRequirementsPage() {
                   </p>
                 </div>
                 <div className="text-right">
-                  <span className="font-display text-2xl font-black text-emerald-600 dark:text-emerald-400">
+                  <span className="font-display text-2xl font-black text-sky-600 dark:text-sky-400">
                     {readinessPercent}%
                   </span>
                   <span className="block text-[10px] uppercase font-bold text-zinc-400">Ready</span>
@@ -236,7 +236,7 @@ export default function VisaRequirementsPage() {
               {/* Progress Bar */}
               <div className="my-4 h-2 w-full overflow-hidden rounded-full bg-zinc-200 dark:bg-white/10">
                 <div
-                  className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-300"
+                  className="h-full bg-gradient-to-r from-sky-500 to-blue-500 transition-all duration-300"
                   style={{ width: `${readinessPercent}%` }}
                 />
               </div>
@@ -251,7 +251,7 @@ export default function VisaRequirementsPage() {
                       onClick={() => toggleDoc(doc)}
                       className={`flex cursor-pointer items-start gap-3 rounded-2xl p-3.5 border transition-all ${
                         isChecked
-                          ? "border-emerald-500 bg-emerald-50/70 dark:bg-emerald-950/30"
+                          ? "border-sky-500 bg-sky-50/70 dark:bg-sky-950/30"
                           : "border-zinc-200 bg-white/80 dark:border-white/5 dark:bg-white/5"
                       }`}
                     >
@@ -259,9 +259,9 @@ export default function VisaRequirementsPage() {
                         type="checkbox"
                         checked={isChecked}
                         onChange={() => {}}
-                        className="mt-0.5 h-4 w-4 rounded text-emerald-600 focus:ring-emerald-500"
+                        className="mt-0.5 h-4 w-4 rounded text-sky-600 focus:ring-sky-500"
                       />
-                      <span className={`text-xs font-semibold leading-relaxed ${isChecked ? "text-emerald-950 dark:text-emerald-200 font-bold" : "text-zinc-700 dark:text-zinc-300"}`}>
+                      <span className={`text-xs font-semibold leading-relaxed ${isChecked ? "text-sky-950 dark:text-sky-200 font-bold" : "text-zinc-700 dark:text-zinc-300"}`}>
                         {doc}
                       </span>
                     </label>
@@ -274,7 +274,7 @@ export default function VisaRequirementsPage() {
                   href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(applyMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 py-3 text-xs font-black uppercase text-white shadow-md shadow-emerald-700/25"
+                  className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 to-blue-600 py-3 text-xs font-black uppercase text-white shadow-md shadow-sky-700/25"
                 >
                   <Send size={14} /> Send Checked Documents for Fast Verification
                 </a>
@@ -300,7 +300,7 @@ export default function VisaRequirementsPage() {
 
               {/* Arrival Guidelines */}
               <div className="rounded-[2.5rem] border border-zinc-200/80 bg-white/70 p-6 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5 sm:p-8">
-                <span className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                <span className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-sky-600 dark:text-sky-400">
                   <BadgeCheck size={16} /> Port of Entry / Arrival Notice
                 </span>
                 <p className="mt-3 text-xs sm:text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">

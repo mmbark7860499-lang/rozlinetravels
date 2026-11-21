@@ -29,11 +29,11 @@ export default function BookFlightsPage() {
 
       {/* Hero Header */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#021808] via-[#042810] to-[#021408] px-4 pt-32 pb-24 text-white">
-        <div className="pointer-events-none absolute -top-40 left-1/3 h-96 w-96 rounded-full bg-emerald-500/20 blur-[130px]" />
+        <div className="pointer-events-none absolute -top-40 left-1/3 h-96 w-96 rounded-full bg-sky-500/20 blur-[130px]" />
         
         <div className="relative mx-auto max-w-7xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.25em] text-amber-300 backdrop-blur-md">
-            <Sparkles size={14} /> Sky Way Flight Desk
+            <Sparkles size={14} /> Rozline Flight Desk
           </div>
 
           <h1 className="mt-4 max-w-4xl font-display text-4xl sm:text-6xl font-extrabold leading-tight">
@@ -55,7 +55,7 @@ export default function BookFlightsPage() {
       <section className="px-4 pb-24">
         <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border border-zinc-200/80 bg-white/70 p-6 shadow-md dark:border-white/10 dark:bg-white/5">
-            <div className="grid h-12 w-12 place-items-center rounded-2xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
+            <div className="grid h-12 w-12 place-items-center rounded-2xl bg-sky-500/15 text-sky-600 dark:text-sky-400">
               <ShieldCheck size={22} />
             </div>
             <h3 className="mt-4 font-display text-lg font-bold text-zinc-900 dark:text-white">

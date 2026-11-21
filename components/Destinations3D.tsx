@@ -113,7 +113,7 @@ export default function Destinations3D() {
           {destinationsList.map((item, idx) => (
             <div
               key={item.name}
-              className="group relative perspective-1000 overflow-hidden rounded-[2rem] border border-zinc-200/80 bg-white/70 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-amber-400/60 hover:shadow-2xl hover:shadow-emerald-950/20 dark:border-white/10 dark:bg-white/5"
+              className="group relative perspective-1000 overflow-hidden rounded-[2rem] border border-zinc-200/80 bg-white/70 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-amber-400/60 hover:shadow-2xl hover:shadow-sky-950/20 dark:border-white/10 dark:bg-white/5"
             >
               {/* Image Container */}
               <div className="relative aspect-[4/5] w-full overflow-hidden">
@@ -134,14 +134,14 @@ export default function Destinations3D() {
                   <span className="rounded-full bg-black/60 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-amber-400 backdrop-blur-md border border-white/10">
                     {item.season}
                   </span>
-                  <span className="rounded-full bg-emerald-600/90 px-3 py-1 text-[11px] font-black text-white shadow backdrop-blur-md">
+                  <span className="rounded-full bg-sky-600/90 px-3 py-1 text-[11px] font-black text-white shadow backdrop-blur-md">
                     {item.startingPrice}
                   </span>
                 </div>
 
                 {/* Bottom Content */}
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="flex items-center gap-1 text-[11px] font-bold text-emerald-300">
+                  <span className="flex items-center gap-1 text-[11px] font-bold text-sky-300">
                     <MapPin size={12} /> {item.country}
                   </span>
                   <h3 className="font-display text-xl font-bold text-white mt-1 group-hover:text-amber-300 transition-colors">
@@ -167,11 +167,11 @@ export default function Destinations3D() {
                   {/* WhatsApp Action Button */}
                   <a
                     href={`https://wa.me/918590624181?text=${encodeURIComponent(
-                      `Hi Sky Way Travels Tirur, I would like to get package details and quote for ${item.name} (${item.country}).`
+                      `Hi Rozline Travels Tirur, I would like to get package details and quote for ${item.name} (${item.country}).`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3.5 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 py-2.5 text-xs font-black uppercase tracking-wider text-white shadow-lg transition hover:brightness-110"
+                    className="mt-3.5 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 py-2.5 text-xs font-black uppercase tracking-wider text-white shadow-lg transition hover:brightness-110"
                   >
                     <Send size={13} />
                     <span>Inquire Package</span>

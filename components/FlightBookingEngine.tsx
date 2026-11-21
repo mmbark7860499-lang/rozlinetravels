@@ -246,7 +246,7 @@ export default function FlightBookingEngine() {
     }
 
     const message = [
-      `✈️ *Sky Way Travels Flight Booking Inquiry*`,
+      `✈️ *Rozline Travels Flight Booking Inquiry*`,
       `Route: ${flight.fromCode} (${flight.fromName}) ➔ ${flight.toCode} (${flight.toName})`,
       `Airline: ${flight.airline} (${flight.flightNumber})`,
       `Trip Type: ${tripType.toUpperCase()}`,
@@ -268,10 +268,10 @@ export default function FlightBookingEngine() {
   return (
     <div className="relative mx-auto w-full max-w-full lg:max-w-6xl overflow-hidden">
       {/* 3D Glass Console Shell */}
-      <div className="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-zinc-200/90 bg-white/95 p-3.5 sm:p-7 shadow-2xl shadow-zinc-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-[#05160b]/90">
+      <div className="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-zinc-200/90 bg-white/95 p-3.5 sm:p-7 shadow-2xl shadow-zinc-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-[#07152b]/90">
         
         {/* Glow Accents */}
-        <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-emerald-500/15 blur-3xl" />
+        <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-sky-500/15 blur-3xl" />
         <div className="pointer-events-none absolute -right-20 -bottom-20 h-72 w-72 rounded-full bg-amber-500/15 blur-3xl" />
 
         {/* Category Tabs */}
@@ -292,11 +292,11 @@ export default function FlightBookingEngine() {
                 onClick={() => setActiveTab(tab.id as ActiveTab)}
                 className={`group flex shrink-0 items-center gap-2.5 rounded-2xl px-4 py-3 text-xs sm:text-sm font-black transition-all ${
                   active
-                    ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-lg shadow-emerald-600/30 ring-1 ring-emerald-400/50"
+                    ? "bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-lg shadow-sky-600/30 ring-1 ring-sky-400/50"
                     : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-white/5"
                 }`}
               >
-                <Icon size={17} className={active ? "text-amber-300" : "text-emerald-500"} />
+                <Icon size={17} className={active ? "text-amber-300" : "text-sky-500"} />
                 <span>{tab.label}</span>
                 <span
                   className={`rounded-full px-2 py-0.5 text-[9px] font-black uppercase ${
@@ -320,7 +320,7 @@ export default function FlightBookingEngine() {
                   onClick={() => setTripType("one-way")}
                   className={`rounded-full px-4 py-1.5 text-xs font-black transition-all ${
                     tripType === "one-way"
-                      ? "bg-emerald-600 text-white shadow-sm"
+                      ? "bg-sky-600 text-white shadow-sm"
                       : "text-zinc-600 dark:text-zinc-400"
                   }`}
                 >
@@ -331,7 +331,7 @@ export default function FlightBookingEngine() {
                   onClick={() => setTripType("round-trip")}
                   className={`rounded-full px-4 py-1.5 text-xs font-black transition-all ${
                     tripType === "round-trip"
-                      ? "bg-emerald-600 text-white shadow-sm"
+                      ? "bg-sky-600 text-white shadow-sm"
                       : "text-zinc-600 dark:text-zinc-400"
                   }`}
                 >
@@ -339,7 +339,7 @@ export default function FlightBookingEngine() {
                 </button>
               </div>
 
-              <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 dark:text-emerald-400">
+              <div className="flex items-center gap-2 text-xs font-bold text-sky-700 dark:text-sky-400">
                 <ShieldCheck size={16} />
                 <span>Direct Agent Fares • 24/7 Tirur WhatsApp Support</span>
               </div>
@@ -348,9 +348,9 @@ export default function FlightBookingEngine() {
             {/* Flight Search Form */}
             <form onSubmit={handleSearchSubmit} className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {/* Origin */}
-              <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-white/10 dark:bg-black/40">
+              <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-500/20 dark:border-white/10 dark:bg-black/40">
                 <label className="flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                  <Plane size={13} className="text-emerald-500" /> From Airport
+                  <Plane size={13} className="text-sky-500" /> From Airport
                 </label>
                 <select
                   value={fromAirport}
@@ -369,7 +369,7 @@ export default function FlightBookingEngine() {
               </div>
 
               {/* Destination */}
-              <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-white/10 dark:bg-black/40">
+              <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-500/20 dark:border-white/10 dark:bg-black/40">
                 <label className="flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
                   <MapPin size={13} className="text-amber-500" /> To Destination
                 </label>
@@ -390,9 +390,9 @@ export default function FlightBookingEngine() {
               </div>
 
               {/* Departure Date */}
-              <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-white/10 dark:bg-black/40">
+              <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-500/20 dark:border-white/10 dark:bg-black/40">
                 <label className="flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                  <Calendar size={13} className="text-emerald-500" /> Departure Date
+                  <Calendar size={13} className="text-sky-500" /> Departure Date
                 </label>
                 <input
                   type="date"
@@ -406,7 +406,7 @@ export default function FlightBookingEngine() {
 
               {/* Return Date or Passengers */}
               {tripType === "round-trip" ? (
-                <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-white/10 dark:bg-black/40">
+                <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-500/20 dark:border-white/10 dark:bg-black/40">
                   <label className="flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
                     <Calendar size={13} className="text-amber-500" /> Return Date
                   </label>
@@ -420,9 +420,9 @@ export default function FlightBookingEngine() {
                   <span className="text-[10px] font-semibold text-zinc-400">Round trip savings applied</span>
                 </div>
               ) : (
-                <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-white/10 dark:bg-black/40">
+                <div className="relative flex flex-col gap-1.5 rounded-2xl border border-zinc-200 bg-white/70 p-3.5 transition focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-500/20 dark:border-white/10 dark:bg-black/40">
                   <label className="flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                    <Users size={13} className="text-emerald-500" /> Passengers & Cabin
+                    <Users size={13} className="text-sky-500" /> Passengers & Cabin
                   </label>
                   <div className="flex items-center gap-2">
                     <select
@@ -456,7 +456,7 @@ export default function FlightBookingEngine() {
                 <button
                   type="submit"
                   disabled={isSearching}
-                  className="flex-1 flex min-h-[52px] sm:min-h-[56px] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 px-4 sm:px-6 text-xs sm:text-sm font-black text-white shadow-xl shadow-emerald-700/25 transition hover:scale-[1.01] active:scale-[0.99]"
+                  className="flex-1 flex min-h-[52px] sm:min-h-[56px] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 px-4 sm:px-6 text-xs sm:text-sm font-black text-white shadow-xl shadow-sky-700/25 transition hover:scale-[1.01] active:scale-[0.99]"
                 >
                   {isSearching ? (
                     <span className="flex items-center gap-2">
@@ -479,10 +479,10 @@ export default function FlightBookingEngine() {
               <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
                 <div>
                   <h3 className="font-display text-xl font-bold text-zinc-900 dark:text-white">
-                    Available Flights: <span className="text-emerald-600 dark:text-emerald-400">{fromAirport} ➔ {toAirport}</span>
+                    Available Flights: <span className="text-sky-600 dark:text-sky-400">{fromAirport} ➔ {toAirport}</span>
                   </h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                    Showing best price options for {departureDate}. All prices include taxes & Sky Way concierge assistance.
+                    Showing best price options for {departureDate}. All prices include taxes & Rozline concierge assistance.
                   </p>
                 </div>
 
@@ -493,7 +493,7 @@ export default function FlightBookingEngine() {
                       type="checkbox"
                       checked={nonStopOnly}
                       onChange={e => setNonStopOnly(e.target.checked)}
-                      className="rounded text-emerald-600"
+                      className="rounded text-sky-600"
                     />
                     <span>Direct Flights Only</span>
                   </label>
@@ -518,7 +518,7 @@ export default function FlightBookingEngine() {
                 {filteredFlights.map(flight => (
                   <div
                     key={flight.id}
-                    className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-zinc-200/80 bg-white/60 p-4 sm:p-5 transition-all hover:border-emerald-500/50 hover:shadow-xl dark:border-white/10 dark:bg-white/5"
+                    className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-zinc-200/80 bg-white/60 p-4 sm:p-5 transition-all hover:border-sky-500/50 hover:shadow-xl dark:border-white/10 dark:bg-white/5"
                   >
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-[1.2fr_1.8fr_1fr] md:items-center">
                       {/* Airline Brand */}
@@ -529,7 +529,7 @@ export default function FlightBookingEngine() {
                             <h4 className="font-display font-extrabold text-base text-zinc-900 dark:text-white">
                               {flight.airline}
                             </h4>
-                            <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-black text-emerald-700 dark:text-emerald-400">
+                            <span className="rounded-md bg-sky-500/15 px-2 py-0.5 text-[10px] font-black text-sky-700 dark:text-sky-400">
                               {flight.flightNumber}
                             </span>
                           </div>
@@ -552,9 +552,9 @@ export default function FlightBookingEngine() {
                           </span>
                           <div className="relative my-1 w-full flex items-center justify-center">
                             <div className="h-[2px] w-full bg-zinc-200 dark:bg-white/20" />
-                            <Plane size={14} className="absolute text-emerald-500" />
+                            <Plane size={14} className="absolute text-sky-500" />
                           </div>
-                          <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 truncate max-w-full">
+                          <span className="text-[10px] font-bold text-sky-600 dark:text-sky-400 truncate max-w-full">
                             {flight.stops}
                           </span>
                         </div>
@@ -571,7 +571,7 @@ export default function FlightBookingEngine() {
                       <div className="flex flex-row items-center justify-between border-t border-zinc-100 pt-3 md:flex-col md:items-end md:border-t-0 md:pt-0">
                         <div className="text-left md:text-right">
                           <span className="text-[10px] font-semibold text-zinc-400 block">Total per person</span>
-                          <p className="font-display text-xl sm:text-2xl font-black text-emerald-700 dark:text-emerald-400">
+                          <p className="font-display text-xl sm:text-2xl font-black text-sky-700 dark:text-sky-400">
                             ₹{flight.price.toLocaleString("en-IN")}
                           </p>
                         </div>
@@ -588,7 +588,7 @@ export default function FlightBookingEngine() {
                           <button
                             type="button"
                             onClick={() => handleWhatsAppBooking(flight)}
-                            className="flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-3.5 py-2 text-xs font-black text-white shadow-md shadow-emerald-700/20 transition hover:bg-emerald-500"
+                            className="flex items-center justify-center gap-1.5 rounded-xl bg-sky-600 px-3.5 py-2 text-xs font-black text-white shadow-md shadow-sky-700/20 transition hover:bg-sky-500"
                           >
                             <Send size={13} />
                             <span>Book</span>
@@ -604,10 +604,10 @@ export default function FlightBookingEngine() {
                         <span className="truncate">{flight.baggage}</span>
                       </span>
                       <span className="flex items-center gap-1">
-                        <Utensils size={12} className="text-emerald-500 shrink-0" />
+                        <Utensils size={12} className="text-sky-500 shrink-0" />
                         <span>{flight.meals ? "Meals Included" : "Snacks on Purchase"}</span>
                       </span>
-                      <span className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
+                      <span className="flex items-center gap-1 text-sky-700 dark:text-sky-400">
                         <CheckCircle2 size={12} className="shrink-0" />
                         <span>Free Web Check-in & WhatsApp Pass</span>
                       </span>
@@ -644,11 +644,11 @@ export default function FlightBookingEngine() {
               ].map(v => (
                 <div
                   key={v.country}
-                  className="rounded-2xl border border-zinc-200 bg-white/70 p-4 transition hover:border-emerald-500 dark:border-white/10 dark:bg-white/5"
+                  className="rounded-2xl border border-zinc-200 bg-white/70 p-4 transition hover:border-sky-500 dark:border-white/10 dark:bg-white/5"
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-2xl">{v.flag}</span>
-                    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-black text-emerald-600 dark:text-emerald-400">
+                    <span className="rounded-full bg-sky-500/15 px-2 py-0.5 text-[10px] font-black text-sky-600 dark:text-sky-400">
                       {v.time}
                     </span>
                   </div>
@@ -657,11 +657,11 @@ export default function FlightBookingEngine() {
                   <p className="mt-2 font-extrabold text-amber-500">{v.fee}</p>
                   <a
                     href={`https://wa.me/918590624181?text=${encodeURIComponent(
-                      `Hi Sky Way Travels, I want to apply for a ${v.country} visa (${v.type}). Please share requirements.`
+                      `Hi Rozline Travels, I want to apply for a ${v.country} visa (${v.type}). Please share requirements.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 flex items-center justify-center gap-1 rounded-xl bg-emerald-600/15 py-2 text-xs font-black text-emerald-800 transition hover:bg-emerald-600 hover:text-white dark:bg-emerald-500/15 dark:text-emerald-300 dark:hover:bg-emerald-500 dark:hover:text-black"
+                    className="mt-3 flex items-center justify-center gap-1 rounded-xl bg-sky-600/15 py-2 text-xs font-black text-sky-800 transition hover:bg-sky-600 hover:text-white dark:bg-sky-500/15 dark:text-sky-300 dark:hover:bg-sky-500 dark:hover:text-black"
                   >
                     <span>Apply on WhatsApp</span>
                     <ChevronRight size={14} />
@@ -673,7 +673,7 @@ export default function FlightBookingEngine() {
             <div className="mt-6 text-center">
               <a
                 href="/visa-services"
-                className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-xs font-black uppercase tracking-wider text-white shadow-lg transition hover:bg-emerald-500"
+                className="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-xs font-black uppercase tracking-wider text-white shadow-lg transition hover:bg-sky-500"
               >
                 <span>View All 17 Country Visa Document Checklists</span>
                 <ChevronRight size={16} />
@@ -732,7 +732,7 @@ export default function FlightBookingEngine() {
                     <span className="rounded-full bg-amber-400/20 px-3 py-1 text-[11px] font-black text-amber-500">
                       {pkg.duration}
                     </span>
-                    <span className="font-display text-xl font-black text-emerald-700 dark:text-emerald-400">
+                    <span className="font-display text-xl font-black text-sky-700 dark:text-sky-400">
                       {pkg.price}
                     </span>
                   </div>
@@ -740,7 +740,7 @@ export default function FlightBookingEngine() {
                   
                   <div className="mt-3 space-y-1.5 text-xs text-zinc-600 dark:text-zinc-300">
                     <p className="flex items-center gap-1.5 font-semibold">
-                      <MapPin size={13} className="text-emerald-500" /> Makkah: {pkg.makkah}
+                      <MapPin size={13} className="text-sky-500" /> Makkah: {pkg.makkah}
                     </p>
                     <p className="flex items-center gap-1.5 font-semibold">
                       <MapPin size={13} className="text-amber-500" /> Madinah: {pkg.madinah}
@@ -753,18 +753,18 @@ export default function FlightBookingEngine() {
                   <div className="mt-4 border-t border-zinc-100 pt-3 dark:border-white/10 space-y-1">
                     {pkg.highlights.map(h => (
                       <p key={h} className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
-                        <CheckCircle2 size={12} className="text-emerald-500" /> {h}
+                        <CheckCircle2 size={12} className="text-sky-500" /> {h}
                       </p>
                     ))}
                   </div>
 
                   <a
                     href={`https://wa.me/918590624181?text=${encodeURIComponent(
-                      `Hi Sky Way Travels Tirur, I would like to book the ${pkg.title} (${pkg.price}) Umrah package. Please share available batch dates.`
+                      `Hi Rozline Travels Tirur, I would like to book the ${pkg.title} (${pkg.price}) Umrah package. Please share available batch dates.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 py-2.5 text-xs font-black text-white shadow-md shadow-emerald-700/20"
+                    className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 py-2.5 text-xs font-black text-white shadow-md shadow-sky-700/20"
                   >
                     <Send size={14} /> Inquire for Group Dates
                   </a>
@@ -799,18 +799,18 @@ export default function FlightBookingEngine() {
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-2xl">{tour.img}</span>
-                    <span className="font-display text-base font-black text-emerald-700 dark:text-emerald-400">{tour.price}</span>
+                    <span className="font-display text-base font-black text-sky-700 dark:text-sky-400">{tour.price}</span>
                   </div>
                   <h4 className="mt-2 font-display text-base font-bold text-zinc-900 dark:text-white">{tour.title}</h4>
                   <p className="text-[11px] font-bold text-amber-500">{tour.days}</p>
                   <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">{tour.desc}</p>
                   <a
                     href={`https://wa.me/918590624181?text=${encodeURIComponent(
-                      `Hi Sky Way Travels Tirur, please share the full day-by-day itinerary and flight options for the ${tour.title} (${tour.days}) holiday.`
+                      `Hi Rozline Travels Tirur, please share the full day-by-day itinerary and flight options for the ${tour.title} (${tour.days}) holiday.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 flex items-center justify-center gap-1 rounded-xl bg-zinc-100 py-2 text-xs font-black text-zinc-800 transition hover:bg-emerald-600 hover:text-white dark:bg-white/10 dark:text-zinc-200"
+                    className="mt-4 flex items-center justify-center gap-1 rounded-xl bg-zinc-100 py-2 text-xs font-black text-zinc-800 transition hover:bg-sky-600 hover:text-white dark:bg-white/10 dark:text-zinc-200"
                   >
                     <span>Get Detailed Quote</span>
                     <ChevronRight size={14} />
@@ -835,7 +835,7 @@ export default function FlightBookingEngine() {
                 href="https://wa.me/918590624181?text=Hi%20Sky%20Way%20Travels,%20I%20would%20like%20to%20book%20a%20hotel.%20Please%20assist%20me."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-xs font-black uppercase text-white shadow-lg hover:bg-emerald-500"
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-xs font-black uppercase text-white shadow-lg hover:bg-sky-500"
               >
                 <Send size={14} /> Request Hotel Availability
               </a>
@@ -869,8 +869,8 @@ export default function FlightBookingEngine() {
 
             {/* Aircraft Cabin Graphic */}
             <div className="my-5 rounded-2xl bg-zinc-100 p-4 text-center dark:bg-black/40">
-              <div className="mx-auto max-w-[200px] border-b-2 border-emerald-500 pb-2 mb-4">
-                <span className="text-[10px] font-black uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
+              <div className="mx-auto max-w-[200px] border-b-2 border-sky-500 pb-2 mb-4">
+                <span className="text-[10px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400">
                   ▲ COCKPIT / FRONT ▲
                 </span>
               </div>
@@ -890,7 +890,7 @@ export default function FlightBookingEngine() {
                           className={`h-9 w-9 rounded-lg text-xs font-black transition-all ${
                             isSelected
                               ? "bg-amber-400 text-black shadow-md shadow-amber-400/50 scale-105"
-                              : "bg-white text-zinc-700 hover:bg-emerald-100 dark:bg-white/10 dark:text-zinc-200 dark:hover:bg-emerald-500/20"
+                              : "bg-white text-zinc-700 hover:bg-emerald-100 dark:bg-white/10 dark:text-zinc-200 dark:hover:bg-sky-500/20"
                           }`}
                         >
                           {seatId}
@@ -911,7 +911,7 @@ export default function FlightBookingEngine() {
                           className={`h-9 w-9 rounded-lg text-xs font-black transition-all ${
                             isSelected
                               ? "bg-amber-400 text-black shadow-md shadow-amber-400/50 scale-105"
-                              : "bg-white text-zinc-700 hover:bg-emerald-100 dark:bg-white/10 dark:text-zinc-200 dark:hover:bg-emerald-500/20"
+                              : "bg-white text-zinc-700 hover:bg-emerald-100 dark:bg-white/10 dark:text-zinc-200 dark:hover:bg-sky-500/20"
                           }`}
                         >
                           {seatId}
@@ -931,7 +931,7 @@ export default function FlightBookingEngine() {
               <button
                 type="button"
                 onClick={() => setSeatModalFlight(null)}
-                className="rounded-xl bg-emerald-600 px-5 py-2.5 font-bold text-white shadow-md transition hover:bg-emerald-500"
+                className="rounded-xl bg-sky-600 px-5 py-2.5 font-bold text-white shadow-md transition hover:bg-sky-500"
               >
                 Confirm Seat
               </button>

@@ -1,17 +1,17 @@
 {
-  "name": "Rozline & Sky Way Travels Tirur",
+  "name": "Rozline Travel and Tours",
   "short_name": "Rozline Travels",
   "description": "Flights, visa, holidays, hotels, Umrah packages, travel insurance and premium travel assistance from Tirur, Kerala.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#0B7A2B",
+  "background_color": "#030B17",
+  "theme_color": "#0284C7",
   "icons": [
     {
-      "src": "/sky-way-logo.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg",
-      "purpose": "any"
+      "src": "/logo.png",
+      "sizes": "400x400",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

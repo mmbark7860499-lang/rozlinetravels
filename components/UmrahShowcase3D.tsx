@@ -17,7 +17,7 @@ export default function UmrahShowcase3D() {
   const estimatedTotal = priceMultipliers[roomType] * pilgrims;
 
   return (
-    <section id="umrah" className="relative px-4 py-24 bg-gradient-to-b from-transparent via-emerald-950/20 to-transparent">
+    <section id="umrah" className="relative px-4 py-24 bg-gradient-to-b from-transparent via-sky-950/20 to-transparent">
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -54,7 +54,7 @@ export default function UmrahShowcase3D() {
                 <h3 className="mt-2 font-display text-2xl font-bold text-white">
                   Swissôtel & Pullman Zamzam Makkah
                 </h3>
-                <p className="text-xs text-emerald-200">Just 50 meters to the Holy Courtyard</p>
+                <p className="text-xs text-sky-200">Just 50 meters to the Holy Courtyard</p>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export default function UmrahShowcase3D() {
 
           {/* Right Column: Interactive Umrah Cost Estimator */}
           <div className="rounded-[2.5rem] border border-zinc-200/80 bg-white/80 p-6 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
-            <span className="text-xs font-black uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-400">
+            <span className="text-xs font-black uppercase tracking-[0.2em] text-sky-600 dark:text-sky-400">
               Interactive Package Estimator
             </span>
             <h3 className="mt-1 font-display text-2xl font-bold text-zinc-900 dark:text-white">
@@ -119,7 +119,7 @@ export default function UmrahShowcase3D() {
                 </label>
                 <div className="mt-2 flex items-center justify-between rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-2.5 dark:border-white/10 dark:bg-white/5">
                   <div className="flex items-center gap-2">
-                    <Users size={16} className="text-emerald-500" />
+                    <Users size={16} className="text-sky-500" />
                     <span className="text-sm font-bold text-zinc-800 dark:text-white">
                       {pilgrims} {pilgrims === 1 ? "Person" : "Persons"}
                     </span>
@@ -135,7 +135,7 @@ export default function UmrahShowcase3D() {
                     <button
                       type="button"
                       onClick={() => setPilgrims(pilgrims + 1)}
-                      className="h-8 w-8 rounded-lg bg-emerald-600 font-black text-white shadow-sm"
+                      className="h-8 w-8 rounded-lg bg-sky-600 font-black text-white shadow-sm"
                     >
                       +
                     </button>
@@ -144,7 +144,7 @@ export default function UmrahShowcase3D() {
               </div>
 
               {/* Total Calculation Display */}
-              <div className="rounded-2xl bg-gradient-to-br from-emerald-900/30 to-amber-900/20 p-4 border border-amber-400/20">
+              <div className="rounded-2xl bg-gradient-to-br from-sky-900/30 to-orange-900/20 p-4 border border-amber-400/20">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">Estimated Total (All-Inclusive):</span>
                   <span className="font-display text-2xl font-black text-amber-500">
@@ -159,13 +159,13 @@ export default function UmrahShowcase3D() {
               {/* Submit to WhatsApp */}
               <a
                 href={`https://wa.me/918590624181?text=${encodeURIComponent(
-                  `Assalamu Alaikum Sky Way Travels Tirur, I would like to book Umrah package for ${pilgrims} persons in ${roomType.toUpperCase()} room. Estimated total ₹${estimatedTotal.toLocaleString(
+                  `Assalamu Alaikum Rozline Travels Tirur, I would like to book Umrah package for ${pilgrims} persons in ${roomType.toUpperCase()} room. Estimated total ₹${estimatedTotal.toLocaleString(
                     "en-IN"
                   )}. Please inform upcoming batch dates.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-emerald-700/25 transition hover:scale-[1.01]"
+                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 py-3.5 text-xs font-black uppercase tracking-wider text-white shadow-xl shadow-sky-700/25 transition hover:scale-[1.01]"
               >
                 <Send size={15} /> Confirm Batch Availability on WhatsApp
               </a>
