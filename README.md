@@ -64,11 +64,6 @@ SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
 ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD=your-secure-password
 ADMIN_PASSCODE=your-passcode
-
-# Flight Supplier API (Optional)
-TBO_API_ENDPOINT=https://api.travelboutiqueonline.com/v1
-TBO_CLIENT_ID=
-TBO_CLIENT_PASSWORD=
 ```
 
 ### 4. Database Setup
@@ -104,7 +99,7 @@ npm run start
 ```
 ├── app/                  # Next.js App Router (pages, layouts, API routes)
 │   ├── admin/            # Admin control panel
-│   ├── api/              # Backend endpoints (bookings, leads, offers, flights)
+│   ├── api/              # Backend endpoints (bookings, leads, offers, admin)
 │   ├── book-flights/     # Flight booking interface
 │   └── visa-services/    # Visa requirements & booking desk
 ├── components/           # Reusable UI components & layouts

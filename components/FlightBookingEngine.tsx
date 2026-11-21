@@ -8,7 +8,6 @@ import {
   Clock,
   Compass,
   CreditCard,
-  ExternalLink,
   FileCheck,
   Filter,
   Luggage,
@@ -22,7 +21,6 @@ import {
   Utensils,
   X
 } from "lucide-react";
-import { SUPPLIER_PORTAL_URL } from "@/lib/flight-config";
 
 type ActiveTab = "flights" | "visas" | "umrah" | "holidays" | "hotels";
 type TripType = "one-way" | "round-trip";
@@ -473,16 +471,6 @@ export default function FlightBookingEngine() {
                     </>
                   )}
                 </button>
-
-                <a
-                  href={SUPPLIER_PORTAL_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-2xl border border-zinc-300 bg-white/70 px-4 py-3 text-xs font-bold text-zinc-700 transition hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200"
-                >
-                  <span>Supplier B2B Engine</span>
-                  <ExternalLink size={14} />
-                </a>
               </div>
             </form>
 
